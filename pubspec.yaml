@@ -1,8 +1,8 @@
 name: josa
 description: Josa library for korean
 version: 0.0.1
-author:
-homepage:
+author: Seung-gi Lim <seung.gi.lim@gmail.com>
+homepage: https://github.com/sglim/josa
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
