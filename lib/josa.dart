@@ -75,10 +75,6 @@ class Josa {
   bool _hasClosedSyllable(String value) {
     final lastSyllable = _getLastSyllableCode(value);
     final isClosed = lastSyllable > 0;
-    print(value);
-    print(isClosed);
-    print(group.type);
-    print(lastSyllable);
     if (group.type == JosaType.type6 && lastSyllable == 8) {
       // Note: 으로/로 has a exception when there is ㄹ as a last syllable
       return !isClosed;
