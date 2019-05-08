@@ -1,3 +1,5 @@
-## [0.0.1] - TODO: Add release date.
+## [0.0.2] - Release first josa library
 
-* TODO: Describe initial release.
+* Add josa Library
+* Add test for josa features
+* Handle exception for 으로/로 with ㄹ as a last syllable
