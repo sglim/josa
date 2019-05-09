@@ -1,16 +1,24 @@
-# example
+# Josa example
 
-A new Flutter project.
+    import 'package:josa/josa.dart';
 
-## Getting Started
+    Josa.of('을').of('간장') == 간장을
+    Josa.of('를').of('시계') == 시계를
 
-This project is a starting point for a Flutter application.
+## Support any type of josa
 
-A few resources to get you started if this is your first Flutter project:
+    Josa.of('를').of('간장') == 간장을
+    Josa.of('을').of('간장') == 간장을
+    Josa.of('을/를').of('간장') == 간장을
 
-- [Lab: Write your first Flutter app](https://flutter.io/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.io/docs/cookbook)
+## Supported josa list
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.io/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+* 을/를
+* 은/는
+* 이/가
+* 와/과
+* 이여/여
+* 으로/로
+* 이에요/예요
+* 이었/였
+* 아/야
