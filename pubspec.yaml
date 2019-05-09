@@ -1,6 +1,8 @@
 name: josa
-description: Josa library for korean
-version: 0.0.2
+description: >
+  Josa library for korean. This library is used to add josa
+  corresponding last syllable.
+version: 0.1.0
 author: Seung-gi Lim <seung.gi.lim@gmail.com>
 homepage: https://github.com/sglim/josa
 

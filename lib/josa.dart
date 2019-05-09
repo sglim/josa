@@ -47,6 +47,11 @@ class JosaGroup {
     return null;
   }
 
+  @override
+  String toString() {
+    return '$forClosedSyllable/$forOpenedSyllable';
+  }
+
   static final List<JosaGroup> groups =
       JosaType.values.map((type) => JosaGroup.of(type)).toList();
 
@@ -82,8 +87,10 @@ class Josa {
     return isClosed;
   }
 
-  String getJosaFor(String value) {
-    _getLastSyllableCode(value);
+  String _getJosaFor(String value) {
+    if (value == null || value.length < 1) {
+      return '';
+    }
     if (_hasClosedSyllable(value)) {
       return group.forClosedSyllable;
     }
@@ -91,7 +98,7 @@ class Josa {
   }
 
   String of(String value) {
-    String josa = getJosaFor(value);
+    String josa = _getJosaFor(value);
     if (withValue) {
       return '$value$josa';
     }

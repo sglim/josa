@@ -1,4 +1,9 @@
-## [0.0.2] - Release first josa library
+## [0.1.0]
+
+* Release stable version
+* Add example
+
+## [0.0.2]
 
 * Add josa Library
 * Add test for josa features
